@@ -1,0 +1,77 @@
+body {
+    background-color: #804DF4;
+}
+
+.main-title {
+    font-size: 20px;
+    background-color: #EEEDED;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    border: solid black;
+}
+
+.title {
+    text-align: center;
+}
+
+.gender-button{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 80px;
+
+}
+
+.man-button {
+    margin-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    background-color: #a1a4f1;
+    border-radius: 20px;
+    font-size: 40px;
+
+}
+
+.woman-button {
+    margin-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    background-color: #f19ef5;
+    border-radius: 20px;
+    font-size: 40px;
+
+}
+
+.next-button {
+    margin-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    background-color: #eeb58d;
+    border-radius: 20px;
+}
+
+.next {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.preview-img {
+    width:80%;
+    height:80%;
+}
+
+.upload-container{
+    text-align: center;
+}

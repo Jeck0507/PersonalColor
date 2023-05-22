@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/inputs.css')}}" rel = "stylesheet">
+    <link rel="stylesheet" href="/css/inputs.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-title">
+        <h4 class="title">당신의 얼굴 이미지를 업로드 하고</h4>
+        <h4 class="title">당신의 성별을 선택해주세요</h4>
+    </div>
+
+
+    <form action="/man-add" method="POST">
+        <div class="gender-button">
+            <button id="man" type="submit" class="man-button" name="man" value="man" onclick="order('남자')">남자</button>
+        </div>
+    </form>
+
+    <form action="/woman-add" method="POST">
+        <div class="gender-button">
+            <button id="woman" type="submit" class="woman-button" name="woman" value="woman" onclick="order('여자')">여자</button>
+        </div>
+    </form>
+            <div class="upload-container">
+                <input class = "upload-button" type="file" id="image-upload" accept="image/*" onchange="previewImage(event)">
+                <div class="image-preview">
+                    <img class="preview-img" id="preview" src="#">
+                </div>
+            </div>
+        
+            <div class="next">
+                <button type="button" class="next-button" onclick="location.href='/loading'">다음</button>
+            </div>
+        <script src="/js/inputs.js"></script>
+    </div>
+</body>
+
+</html>
