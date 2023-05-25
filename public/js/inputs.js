@@ -19,3 +19,5 @@ document.getElementById("woman").onclick = function () {
     var gender = "woman";
     console.log("여자");
   };
+
+export var gender;

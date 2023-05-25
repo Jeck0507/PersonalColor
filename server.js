@@ -21,17 +21,19 @@ app.get('/', function(req, res) {
 
 app.get('/inputs', function(req, res) { 
     res.sendFile(__dirname +'/views/inputs.html')
-
   })
 
 app.post('/man-add',function(req, res){
     console.log(req.body.man);
+    var gender = 'man'
 })
 
 app.post('/woman-add',function(req, res){
     console.log(req.body.woman);
+    var gender = 'woman'
 })
 
-    // app.listen('8080', function(){
-    //     console.log('listening on 8080');
-    // });
+
+app.get('/info', function(req, res) { 
+    res.sendFile(__dirname +'/views/info.html')
+  })
