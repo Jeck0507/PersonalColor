@@ -33,27 +33,27 @@ async function predict() {
         switch (prediction[0].className) {
             case "spring":
                 resultTitle = "봄"
-                resultExplain = "다정다감하고 귀여운 당신은 모든 사람들에게 즐거움을 주는 호감형이다! 친절하고 활발한 성격으로 어디에서도 인기폭발이며 애교와 웃음이 많아 연인에게 특히나 사랑스럽다. 당신은 애인바라기로 애인의 관심이 부족하면 시무룩해지고 외로움을 타는 모습이 마치 강아지와 똑 닮았다!"
-                resultCeleb = "강아지상 연예인: 강다니엘, 백현(엑소), 박보검, 송중기"
-                gtag('event', '남자 결과 강아지상', {'event_category': '남자 결과'});
+                resultExplain = ""
+                resultCeleb = "따뜻하고 부드러운 느낌의 봄톤"
+                gtag('event', '남자 결과 봄톤', {'event_category': '남자 결과'});
                 break;
             case "summer":
                 resultTitle = "여름"
-                resultExplain = "무뚝뚝한 당신의 첫인상은 차가워 보이지만 묘한 매력을 풍겨 언제나 인기가 넘친다. 자존심이 세계 1등과 맞먹지만 관심 받는 것을 좋아하고 연인에게는 은근히 애교쟁이다. 시크한 츤데레로 연인에게 끊임없이 설렘을 안겨주는 당신은 고양이와 닮았다!"
-                resultCeleb = "고양이상 연예인: 황민현(뉴이스트), 시우민(엑소), 강동원, 이종석, 이준기"
-                gtag('event', '남자 결과 고양이상', {'event_category': '남자 결과'});
+                resultExplain = ""
+                resultCeleb = "여름 밤의 서늘한 분위기의 봄톤"
+                gtag('event', '남자 결과 여름톤', {'event_category': '남자 결과'});
                 break;
             case "autumn":
                 resultTitle = "가을"
-                resultExplain = "천진난만하고 귀여운 당신은 주변 사람들에게 기쁨을 주는 행복바이러스다! 호기심이 많아 활발하며 귀엽고 순수한 외모로 연인의 보호본능을 자극한다. 존재 자체가 상큼한 당신은 특별한 애교 없이도 연인에게 너무나도 사랑스럽다!"
-                resultCeleb = "토끼상 연예인: 정국(방탄소년단), 바비(아이콘), 박지훈(워너원), 수호(엑소)"
-                gtag('event', '남자 결과 토끼상', {'event_category': '남자 결과'});
+                resultExplain = ""
+                resultCeleb = "시크하지만 잔잔한 감성의 가을톤"
+                gtag('event', '남자 결과 가을톤', {'event_category': '남자 결과'});
                 break;
             case "winter":
                 resultTitle = "겨울"
-                resultExplain = "무심한 성격에 첫인상은 나쁜 남자 같지만, 알고 보면 따뜻함이 묻어나는 당신! 시크한 매력에 선뜻 다가가지 못하지만 한번 다가가면 헤어나올 수 없는 터프한 매력을 가진 카리스마 있는 남자다."
-                resultCeleb = "공룡상 연예인: 윤두준(하이라이트), 이민기, 김우빈, 육성재(비투비), 공유"
-                gtag('event', '남자 결과 공룡상', {'event_category': '남자 결과'});
+                resultExplain = ""
+                resultCeleb = "심플하면서 차가운 매력의 겨울"
+                gtag('event', '남자 결과 겨울톤', {'event_category': '남자 결과'});
                 break;
             default:
                 resultTitle = "알수없음"
@@ -62,46 +62,45 @@ async function predict() {
                 gtag('event', '남자 결과 알수없음', {'event_category': '남자 결과'});
         }
     } else {
-        gtag('event', '동물상 테스트 수행', {
-            'event_category': '동물상 테스트 수행',
+        gtag('event', '테스트 수행', {
+            'event_category': '테스트 수행',
             'event_label': '여자'
         });
         switch (prediction[0].className) {
             case "spring":
                 resultTitle = "봄"
-                resultExplain = "다정다감하고 귀여운 당신은 모든 사람들에게 즐거움을 주는 호감형이다! 상냥하고 활발한 성격으로 어디에서도 인기폭발이지만, 애교와 웃음이 많아 연인에게 특히나 사랑스럽다. 당신은 애인바라기로 애인의 관심이 부족하면 시무룩해지고 외로움을 타는 모습이 마치 강아지와 똑 닮았다!"
-                resultCeleb = "강아지상 연예인: 박보영, 아이유, 윤승아, 민아(걸스데이), 한지민"
-                gtag('event', '여자 결과 강아지상', {'event_category': '여자 결과'});
+                resultExplain = ""
+                resultCeleb = "따뜻하고 부드러운 느낌의 봄톤"
+                gtag('event', '여자 결과 봄톤', {'event_category': '여자 결과'});
                 break;
             case "summer":
                 resultTitle = "여름"
-                resultExplain = "도도하고 섹시한 당신은 첫인상은 차가워 보이지만 묘한 매력을 풍겨 언제나 인기가 넘친다. 자존심이 세계 1등과 맞먹지만 관심 받는 것을 좋아하고 애인에게 관심이 받고 싶을 때는 애교도 부릴 줄 아는 귀여운 매력을 가졌다. 시크한 츤데레로 연인에게 끊임없이 설렘을 안겨주는 당신은 고양이와 닮았다!"
-                resultCeleb = "고양이상 연예인: 안소희(원더걸스), 오연서, 한예슬, 이성경, 이효리"
-                gtag('event', '여자 결과 고양이상', {'event_category': '여자 결과'});
+                resultExplain = ""
+                resultCeleb = "여름 밤의 서늘한 분위기의 봄톤"
+                gtag('event', '여자 결과 여름톤', {'event_category': '여자 결과'});
                 break;
             case "autumn":
                 resultTitle = "가을"
-                resultExplain = "발랄하고 귀여운 당신은 주변 사람들에게 기쁨을 주는 행복바이러스다! 호기심이 많아 활발하며 귀엽고 순수한 외모로 연인의 보호본능을 자극한다. 존재 자체가 상큼하고 깜찍한 당신은 특별한 애교 없이도 연인에게 너무나도 사랑스럽다!"
-                resultCeleb = "토끼상 연예인: 수지, 나연(트와이스), 예린(여자친구), 한승연(카라), 문채원"
-                gtag('event', '여자 결과 토끼상', {'event_category': '여자 결과'});
+                resultExplain = ""
+                resultCeleb = "시크하지만 잔잔한 감성의 가을톤"
+                gtag('event', '여자 결과 가을톤', {'event_category': '여자 결과'});
                 break;
             case "winter":
                 resultTitle = "겨울"
-                resultExplain = "맑고 영롱한 분위기의 당신은 사슴처럼 차분한 성격의 소유자다. 초롱초롱한 눈망울이 당신의 가장 큰 트레이드마크며 따스하고 온순한 눈빛을 가져 사랑스러움을 항상 머금고 있다! 부끄러움이 많아 애정표현이 낯설은 당신은 연인에게조차 신비한 존재지만 따뜻한 성격으로 연인의 마음을 사로잡는 능력을 가졌다."
-                resultCeleb = "사슴상 연예인: 윤아(소녀시대), 이연희, 고아라, 문근영, 정유미(부산행 배우)"
-                gtag('event', '여자 결과 사슴상', {'event_category': '여자 결과'});
+                resultExplain = ""
+                resultCeleb = "심플하면서 차가운 매력의 겨울"
+                gtag('event', '여자 결과 겨울톤', {'event_category': '여자 결과'});
                 break;
             default:
                 resultTitle = "알수없음"
                 resultExplain = ""
                 resultCeleb = ""
-                gtag('event', '여자 결과 알수없음', {'event_category': '여자 결과'});
         }
     }
-    var title = "<div class='" + prediction[0].className + "-animal-title'>" + resultTitle + "</div>"
-    var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
-    var celeb = "<div class='" + prediction[0].className + "-animal-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
-    $('.result-message').html(title + explain + celeb);
+    var title = "<div class='" + prediction[0].className + "-title'>" + resultTitle + "</div>"
+    var explain = "<div class='-explain pt-2'>" + resultExplain + "</div>"
+    var celeb = "<div class='" + prediction[0].className + "celeb pt-2 pb-2'>" + resultCeleb + "</div>"
+    $('.result-message').html(title + explain + celeb );
     var barWidth;
     for (let i = 0; i < maxPredictions; i++) {
         if (prediction[i].probability.toFixed(2) > 0.1) {
@@ -128,7 +127,7 @@ async function predict() {
             default:
                 labelTitle = "알수없음"
         }
-        var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
+        var label = "<div class='label d-flex align-items-center'>" + labelTitle + "</div>"
         var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
         labelContainer.childNodes[i].innerHTML = label + bar;
     }

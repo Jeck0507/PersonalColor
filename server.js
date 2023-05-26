@@ -35,5 +35,5 @@ app.post('/woman-add',function(req, res){
 
 
 app.get('/info', function(req, res) { 
-    res.sendFile(__dirname +'/views/info.html')
+    res.sendFile(__dirname +'/views/Developer Info 82acc3b5a41a452a8e45a33f062131b6.html')
   })

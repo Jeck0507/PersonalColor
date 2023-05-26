@@ -1,6 +1,7 @@
 body{
     background-color: #ffffff;
     font-family: 'Jua', sans-serif;
+
 }
 
 .main-title{
@@ -48,8 +49,4 @@ body{
     border-radius: 20px;
     font-family: 'Jua', sans-serif;
 
-}
-
-.footer-text {
-    text-align: center;
 }

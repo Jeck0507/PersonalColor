@@ -250,7 +250,7 @@ body {
   font-size: 1rem;
   color: #ffffff;
 }
-.animal-label {
+.label {
     width: 20%;
     text-align: left;
     height: 2rem;
@@ -264,34 +264,34 @@ body {
 }
 
 
-.animal-explain {
+.-explain {
     font-size: 1.5rem;
 }
-.spring-animal-title {
-    color: #3ba363;
-}
-.spring-animal-celeb {
-    color: #3ba363;
-    font-size: 1.2rem;
-}
-.summer-animal-title {
+.spring-title {
     color: rgb(221, 136, 66);
 }
-.summer-animal-celeb {
-    color: rgb(221, 136, 66);
+.spring-celeb {
+    color: rgb(221, 136, 66) ;
     font-size: 1.2rem;
 }
-.autumn-animal-title {
+.summer-title {
+    color:#3ba363 ;
+}
+.summer-celeb {
+    color: #3ba363;
+    font-size: 1.2rem;
+}
+.autumn-title {
     color: #ffca0a;
 }
-.aumtumn-animal-celeb {
+.aumtumn-celeb {
     color: #ffca0a;
     font-size: 1.2rem;
 }
-.winter-animal-title {
+.winter-title {
     color: #548dd4;
 }
-.winter-animal-celeb {
+.winter-celeb {
     color: #548dd4;
     font-size: 1.2rem;
 }
@@ -379,4 +379,8 @@ input:checked + label > .knob > i:before {
 
 .ad-banner {
     max-width: 320px;
+}
+
+.modal-title {
+  text-align: center;
 }
